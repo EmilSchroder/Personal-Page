@@ -1,0 +1,69 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+#top{
+    height:10%;
+    width: 100%;
+}
+
+.thin{
+    border-style: solid;
+    border-color: black;
+    border-width: 0 5px 5px 5px;
+}
+
+.XXsmall{
+    width: 10%;
+}
+
+.Xsmall{
+    width: 17.5%;
+}
+
+.small{
+    width: 22%
+}
+
+.medium{
+    width: 33.75%
+}
+
+.large{
+    width: 48.75%
+}
+
+.Xlarge{
+    width: 66.25%
+}
+
+/* .trOne{
+    background-color: white;
+    width: 10%;
+}
+
+.trTwo{
+    background-color: white;
+    width: 10%;
+}
+
+.trThree{
+    background-color: yellow;
+    width: 67%
+} */
+

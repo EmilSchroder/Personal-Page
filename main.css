@@ -68,7 +68,7 @@ body{
 
 .XXsmall{
     box-sizing: border-box;
-    flex-basis: 10%;
+    flex-basis: 8.05%;
 }
 
 .Xsmall{
@@ -78,7 +78,7 @@ body{
 
 .small{
     box-sizing: border-box;
-    flex-basis: 22.23%
+    flex-basis: 23.75%
 }
 
 .medium{
@@ -93,7 +93,7 @@ body{
 
 .Xlarge{
     box-sizing: border-box;
-    flex-basis: 66.25%
+    flex-basis: 68.2%
 }
 
 .white{

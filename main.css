@@ -125,6 +125,10 @@ body{
 #highrect{
     box-sizing: border-box;
     height: 87%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 10%;
 }
 
 #overbox{
@@ -141,6 +145,13 @@ body{
     font-size: 5em;
     margin: 0;
     padding: 0 3% 0 2%;
+}
+
+.links{
+    font-size: 4em;
+    margin: 0;
+    padding: 3% 3% 0 2%;
+
 }
 
 #title{

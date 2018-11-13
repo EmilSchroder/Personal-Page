@@ -1,6 +1,7 @@
 html{
     height: 100%;
     margin: 0;
+    font-family: Verdana, Geneva, sans-serif
 }
 
 body{
@@ -119,7 +120,7 @@ body{
 #lowrect{
     box-sizing: border-box;
     height: 13%;
-    border-top: 8px solid black;
+    /* border-top: 8px solid black; */
 }
 
 #highrect{

@@ -37381,11 +37381,6 @@ var Nav = function Nav() {
         'nav',
         { id: 'nav' },
         _react2.default.createElement(
-            'h1',
-            null,
-            'Nav'
-        ),
-        _react2.default.createElement(
             _reactRouterDom.Link,
             { to: '/' },
             _react2.default.createElement(

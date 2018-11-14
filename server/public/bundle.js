@@ -29868,8 +29868,8 @@ var EmilComp = function EmilComp() {
         { id: 'name' },
         _react2.default.createElement(
             'h1',
-            null,
-            'Emil Schroder'
+            { id: 'Emil' },
+            'Emil Schroder '
         )
     );
 };
@@ -41608,7 +41608,7 @@ var About = function About() {
         ),
         _react2.default.createElement(
             'p',
-            null,
+            { 'class': 'bodytext' },
             'This is all about me'
         )
     );
@@ -41644,7 +41644,7 @@ var Code = function Code() {
         ),
         _react2.default.createElement(
             'p',
-            null,
+            { 'class': 'bodytext' },
             'This is all Code me'
         )
     );
@@ -41680,8 +41680,8 @@ var Professional = function Professional() {
         ),
         _react2.default.createElement(
             'p',
-            null,
-            'This is all Professional me'
+            { 'class': 'bodytext' },
+            'I have held a job, more than one job infact'
         )
     );
 };
@@ -41716,7 +41716,7 @@ var Milk = function Milk() {
         ),
         _react2.default.createElement(
             'p',
-            null,
+            { 'class': 'bodytext' },
             'This is all Milk me'
         )
     );

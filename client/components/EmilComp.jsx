@@ -3,7 +3,8 @@ import { deflateRaw } from 'zlib';
 
 const EmilComp = () => {
     return(
-        <h1>Emil Schroder</h1>
+        <div id='name'><h1>Emil Schroder</h1></div>
+        
     )
 }
 

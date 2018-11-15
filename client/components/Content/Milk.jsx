@@ -4,8 +4,10 @@ const Milk = () => {
     return(
         <React.Fragment>
             <h1>Milkman</h1>
-            <p className='bodytext'><strong>Milk is like the gap between 1 and 0.</strong></p>
-            <p>It feels well defined </p>
+            <p className='bodytext'><strong>The alt milk scene is growing</strong></p>
+            <p className='bodytext'>Soy is no longer the only option</p>
+            <p className='bodytext'>Almond, Coconut, Oat, Rice. All are available</p>
+            <p className='bodytext'>Find out where and add your knowledge at the <a href='https://milkfinder.herokuapp.com/#/' className='bodylink'>Milkfinder website</a></p>
         </React.Fragment>
     )
 }

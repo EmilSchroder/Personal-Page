@@ -27939,7 +27939,7 @@ var About = function About() {
             'If you need more recursion in your life please ',
             _react2.default.createElement(
                 'a',
-                { id: 'recur', href: '/#' },
+                { className: 'bodylink', href: '/#' },
                 'follow this link to my website'
             )
         )
@@ -28067,13 +28067,28 @@ var Milk = function Milk() {
             _react2.default.createElement(
                 'strong',
                 null,
-                'Milk is like the gap between 1 and 0.'
+                'The alt milk scene is growing'
             )
         ),
         _react2.default.createElement(
             'p',
-            null,
-            'It feels well defined '
+            { className: 'bodytext' },
+            'Soy is no longer the only option'
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'bodytext' },
+            'Almond, Coconut, Oat, Rice. All are available'
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'bodytext' },
+            'Find out where and add your knowledge at the ',
+            _react2.default.createElement(
+                'a',
+                { href: 'https://milkfinder.herokuapp.com/#/', className: 'bodylink' },
+                'Milkfinder website'
+            )
         )
     );
 };

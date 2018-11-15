@@ -108,7 +108,7 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
         padding-left: 10%;
     }
 
-    #recur{
+    .bodylink:focus, .bodylink:visited, .bodylink:active, .bodylink {
         padding: 0;
     }
 }

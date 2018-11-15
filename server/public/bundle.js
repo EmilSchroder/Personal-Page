@@ -28222,11 +28222,16 @@ var MobileComp = function MobileComp() {
         ),
         _react2.default.createElement('br', null),
         _react2.default.createElement(
-            'h4',
+            'p',
             null,
-            'Always keen to talk to you'
+            'Always keen to connect with you'
         ),
-        _react2.default.createElement('div', null)
+        _react2.default.createElement(
+            'div',
+            { id: 'social' },
+            _react2.default.createElement('a', { href: '#', 'class': 'fa fa-linkedin' }),
+            _react2.default.createElement('a', { href: '#', 'class': 'fa fa-github' })
+        )
     );
 };
 

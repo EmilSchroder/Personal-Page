@@ -5,7 +5,6 @@ html, body{
     display: flex;
     margin: 0;
     color: rgb(32,32,32);
-    /* background-color: rgba(245, 232, 225, 1); */
     background-color: #f5d2bc;
 background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -40,15 +39,45 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         flex-basis: 100%;
+        margin-top: 17%;
+    }
+
+#social{
+    display: flex;
+    margin-top: 5%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5%;
+    border-radius: 50%;
+    }
+    
+.fa:hover {
+        opacity: 0.7;
+    }
+    
+.fa-linkedin {
+    background: #f5d2bc;
+    color: black;
+    }
+
+.fa-github {
+    background: #f5d2bc;
+    color: black;
     }
 
 #mobile-view{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 /* #content{
@@ -73,6 +102,8 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
         flex-grow: 2;
         justify-content: flex-start;
         align-items: flex-end;
+        
+        margin-top: 0.05%;
     }
     
     h1{
@@ -111,7 +142,7 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
         color: white;
         text-decoration: none;
         display: flex;
-        margin-top: 15%;
+        margin-top: 10%;
         flex-basis: 20%;
         flex-grow: 2;
         justify-content: flex-start;

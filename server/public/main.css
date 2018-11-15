@@ -4,8 +4,11 @@ html, body{
     font-family: 'Museosans 900', sans-serif;
     display: flex;
     margin: 0;
-    background-color: #f5e8e1;
     color: rgb(32,32,32);
+    /* background-color: rgba(245, 232, 225, 1); */
+    background-color: #f5d2bc;
+background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     /* background-color: rgb(73, 73, 73);
     color: white; */
 }
@@ -44,6 +47,7 @@ html, body{
     }
     
 @media (min-width: 769px){
+
     h1{
         font-size: 3em;
         margin: 0;
@@ -56,26 +60,31 @@ html, body{
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
-        padding-right: 1%;
     }
 
     #Emil{
+        display: flex;
         background-color: rgb(32,32,32);;
         color: white;
         width: 100%;
         padding-top: 16%;
+        padding-right: 2%;
         justify-self: baseline;
         border-bottom-right-radius: 1%;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
 
     #content{
         flex-grow: 7;
         flex-basis: 43%;
-        padding-left: 1%;
+        margin-left: 1%;
+        height: auto;
+        /* background: whitesmoke; */
     }
 
     .bodytext{
-        font-size: 2em;
+        font-size: 1.3em;
     }
 
     #nav{
@@ -97,5 +106,9 @@ html, body{
         text-decoration: none;
         color: white;
         padding-left: 10%;
+    }
+
+    #recur{
+        padding: 0;
     }
 }

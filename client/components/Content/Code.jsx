@@ -3,8 +3,11 @@ import React from 'react'
 const Code = () => {
     return(
         <React.Fragment>
-            <h1>Code</h1>
-            <p className='bodytext'>This is all Code me</p>
+            <h1>Cyberman</h1>
+            <p className='bodytext'>The</p>
+            <p className='bodytext'>The</p>
+            <p className='bodytext'>The</p>
+            <p className='bodytext'>The</p>
         </React.Fragment>
     )
 }

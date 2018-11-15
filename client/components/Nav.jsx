@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 const Nav = () => {
     return (
         <nav id='nav'>
-            <Link to={`/`}><p>About</p></Link>
-            <Link to={`/code`}><p>Code</p></Link>
-            <Link to={`/professional`}><p>Professional</p></Link>
-            <Link to={`/milk`}><p>Milk</p></Link>
+            <Link to={`/`}>About</Link>
+            <Link to={`/code`}>Code</Link>
+            <Link to={`/professional`}>Professional</Link>
+            <Link to={`/milk`}>Milk</Link>
         </nav>
     )
 }

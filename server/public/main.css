@@ -13,6 +13,10 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
     color: white; */
 }
 
+.bodylink:focus, .bodylink:visited, .bodylink:active, .bodylink {
+    padding: 0;
+}
+
 #app{
     width: 100%;
 }
@@ -22,49 +26,64 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-
-
- 
-#nav{
+/* #nav{
         order:-1;
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
-    }
+    } */
 
 #name{
+        order: -2;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         flex-basis: 100%;
     }
 
-#content{
+#mobile-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #content{
         flex-grow: 7;
-    }
+    } */
     
 @media (min-width: 769px){
+    #wrapper{
+        /* display: flex; */
+        flex-direction: row; 
+    }
 
+    a:focus, a:visited, a:active, a{
+        text-decoration: none;
+        color: white;
+        padding-left: 10%;
+        padding-top: 7.5%;
+    }
+    #name{
+        display: flex;
+        flex-basis: 27%;
+        flex-grow: 2;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    
     h1{
         font-size: 3em;
         margin: 0;
         padding-top: 10%;
-        padding-left: 1%;
-    }
-    #name{
-        flex-basis: 27%;
-        flex-grow: 2;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
     }
 
     #Emil{
         display: flex;
-        background-color: rgb(32,32,32);;
+        background-color: rgb(32,32,32);
         color: white;
         width: 100%;
         padding-top: 16%;
@@ -80,32 +99,26 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
         flex-basis: 43%;
         margin-left: 1%;
         height: auto;
-        /* background: whitesmoke; */
     }
 
     .bodytext{
         font-size: 1.3em;
+        padding-left: 1%;
     }
 
     #nav{
         background-color: rgb(32,32,32);
         color: white;
         text-decoration: none;
+        display: flex;
         margin-top: 15%;
         flex-basis: 20%;
         flex-grow: 2;
         justify-content: flex-start;
         align-items: flex-start;
         order: 2;
-        display: flex;
         flex-direction: column;
         border-top-left-radius: 1%;
-    }
-
-    a:focus, a:visited, a:active, a{
-        text-decoration: none;
-        color: white;
-        padding-left: 10%;
     }
 
     .bodylink:focus, .bodylink:visited, .bodylink:active, .bodylink {

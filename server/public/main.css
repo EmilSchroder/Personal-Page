@@ -1,160 +1,114 @@
-html{
+html, body{
     height: 100%;
-    margin: 0;
-    font-family: Verdana, Geneva, sans-serif
-}
-
-body{
-    height: 100%;
-    margin: 0;
-}
-
-.container{
+    width: 100%;
+    font-family: 'Museosans 900', sans-serif;
     display: flex;
-    flex-direction: column;
     margin: 0;
-    height: 100%;
+    color: rgb(32,32,32);
+    /* background-color: rgba(245, 232, 225, 1); */
+    background-color: #f5d2bc;
+background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    /* background-color: rgb(73, 73, 73);
+    color: white; */
 }
 
-.row{
+#app{
+    width: 100%;
+}
+
+
+#wrapper{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-}
-
-.col{
-    display: flex;
-    flex-direction: column;
-}
-
-#top{
-    box-sizing: border-box;
-    height:10%;
-    width: 100%;
-}
-
-#middle{
-    box-sizing: border-box;
-    height: 30%;
-    width: 100%;
-}
-
-#bottom{
-    box-sizing: border-box;
-    height: 60%;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
 
 
-.thin{
-    border-style: solid;
-    border-color: black;
-    border-width: 0 5px 5px 0px;
+ 
+#nav{
+        order:-1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
-    justify-content: flex-end;
-    align-items: flex-end;
+#name{
+        align-items: center;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+
+#content{
+        flex-grow: 7;
+    }
+    
+@media (min-width: 769px){
+
+    h1{
+        font-size: 3em;
+        margin: 0;
+        padding-top: 10%;
+        padding-left: 1%;
+    }
+    #name{
+        flex-basis: 27%;
+        flex-grow: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    #Emil{
+        display: flex;
+        background-color: rgb(32,32,32);;
+        color: white;
+        width: 100%;
+        padding-top: 16%;
+        padding-right: 2%;
+        justify-self: baseline;
+        border-bottom-right-radius: 1%;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #content{
+        flex-grow: 7;
+        flex-basis: 43%;
+        margin-left: 1%;
+        height: auto;
+        /* background: whitesmoke; */
+    }
+
+    .bodytext{
+        font-size: 1.3em;
+    }
+
+    #nav{
+        background-color: rgb(32,32,32);
+        color: white;
+        text-decoration: none;
+        margin-top: 15%;
+        flex-basis: 20%;
+        flex-grow: 2;
+        justify-content: flex-start;
+        align-items: flex-start;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        border-top-left-radius: 1%;
+    }
+
+    a:focus, a:visited, a:active, a{
+        text-decoration: none;
+        color: white;
+        padding-left: 10%;
+    }
+
+    .bodylink:focus, .bodylink:visited, .bodylink:active, .bodylink {
+        padding: 0;
+    }
 }
-
-.rightend{
-    border-right: 0;
-}
-
-.base{
-    border-bottom: 0;
-}
-
-.full{
-    box-sizing: border-box;
-}
-
-.XXsmall{
-    box-sizing: border-box;
-    flex-basis: 8.05%;
-}
-
-.Xsmall{
-    box-sizing: border-box;
-    flex-basis: 17.5%;
-}
-
-.small{
-    box-sizing: border-box;
-    flex-basis: 23.75%
-}
-
-.medium{
-    box-sizing: border-box;
-    flex-basis: 33.75%
-}
-
-.large{
-    box-sizing: border-box;
-    flex-basis: 48.75%
-}
-
-.Xlarge{
-    box-sizing: border-box;
-    flex-basis: 68.2%
-}
-
-.white{
-    background-color: white;
-}
-
-.yellow{
-    background-color: yellow;
-}
-
-.blue{
-    background-color: blue;
-}
-
-.red{
-    background-color: red;
-}
-
-.words{
-    display: flex;
-}
-
-#lowrect{
-    box-sizing: border-box;
-    height: 13%;
-    /* border-top: 8px solid black; */
-}
-
-#highrect{
-    box-sizing: border-box;
-    height: 87%;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding-top: 10%;
-}
-
-#overbox{
-    box-sizing: border-box;
-    height: 37%;
-}
-
-#underbox{
-    box-sizing: border-box;
-    height: 63%;
-}
-
-.important{
-    font-size: 5em;
-    margin: 0;
-    padding: 0 3% 0 2%;
-}
-
-.links{
-    font-size: 4em;
-    margin: 0;
-    padding: 3% 3% 0 2%;
-
-}
-
-#title{
-    justify-content: flex-start;
-} 

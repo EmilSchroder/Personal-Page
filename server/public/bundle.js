@@ -27977,22 +27977,36 @@ var Code = function Code() {
         _react2.default.createElement(
             'p',
             { className: 'bodytext' },
-            'The'
+            _react2.default.createElement(
+                'strong',
+                null,
+                'Because we can\'t have fictional superpowers we must settle for real ones.'
+            )
         ),
         _react2.default.createElement(
             'p',
             { className: 'bodytext' },
-            'The'
+            'Fullstack JavaScript with React and Redux.'
         ),
         _react2.default.createElement(
             'p',
             { className: 'bodytext' },
-            'The'
+            'Looking to try out anything new'
         ),
         _react2.default.createElement(
             'p',
             { className: 'bodytext' },
-            'The'
+            'Today\'s code will be better than yesterday\'s'
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'bodytext' },
+            'Checkout some of my stuff on ',
+            _react2.default.createElement(
+                'a',
+                { className: 'bodylink', href: 'https://github.com/EmilSchroder' },
+                'Github'
+            )
         )
     );
 };
@@ -28023,12 +28037,42 @@ var Professional = function Professional() {
         _react2.default.createElement(
             'h1',
             null,
-            'Professional'
+            'Workerman'
         ),
         _react2.default.createElement(
             'p',
             { className: 'bodytext' },
-            'I have held a job, more than one job infact'
+            _react2.default.createElement(
+                'strong',
+                null,
+                'I have worked a job, more than one job infact'
+            )
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'bodytext' },
+            'Maps, telescopes and ice all pose unique challenges'
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'bodytext' },
+            'Business | Casual | Labcoat'
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'bodytext' },
+            'Now a developer looking to get better and better'
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'bodytext' },
+            'Check ',
+            _react2.default.createElement(
+                'a',
+                { className: 'bodylink', href: 'https://www.linkedin.com/in/emil-schroder-b40a535a/' },
+                'LinkedIn'
+            ),
+            ' for more of my history'
         )
     );
 };

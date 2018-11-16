@@ -28229,8 +28229,8 @@ var MobileComp = function MobileComp() {
         _react2.default.createElement(
             'div',
             { id: 'social' },
-            _react2.default.createElement('a', { href: '#', 'class': 'fa fa-linkedin' }),
-            _react2.default.createElement('a', { href: '#', 'class': 'fa fa-github' })
+            _react2.default.createElement('a', { href: 'https://www.linkedin.com/in/emil-schroder-b40a535a/', 'class': 'fa fa-linkedin' }),
+            _react2.default.createElement('a', { href: 'https://github.com/EmilSchroder', 'class': 'fa fa-github' })
         )
     );
 };

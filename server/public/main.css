@@ -28,12 +28,6 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
     flex-direction: column;
 }
 
-/* #nav{
-        order:-1;
-        display: flex;
-        justify-content: space-around;
-    } */
-
 #name{
         order: -2;
         display: flex;
@@ -80,13 +74,9 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
     justify-content: flex-start;
 }
 
-/* #content{
-        flex-grow: 7;
-    } */
     
 @media (min-width: 769px){
     #wrapper{
-        /* display: flex; */
         flex-direction: row; 
     }
 

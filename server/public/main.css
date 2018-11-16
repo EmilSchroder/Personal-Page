@@ -5,12 +5,13 @@ html, body{
     display: flex;
     margin: 0;
     color: rgb(32,32,32);
-    /* background-color: rgba(245, 232, 225, 1); */
     background-color: #f5d2bc;
-background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    /* background-color: rgb(73, 73, 73);
-    color: white; */
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+    /* credit to transparenttextures.com for the backround image */
+}
+
+.bodylink:focus, .bodylink:visited, .bodylink:active, .bodylink {
+    padding: 0;
 }
 
 #app{
@@ -22,49 +23,85 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-
-
- 
-#nav{
-        order:-1;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
 #name{
+        order: -2;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         flex-basis: 100%;
+        margin-top: 17%;
     }
 
-#content{
-        flex-grow: 7;
+#social{
+    display: flex;
+    margin-top: 5%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5%;
+    border-radius: 50%;
     }
     
-@media (min-width: 769px){
+.fa:hover {
+        opacity: 0.7;
+    }
+    
+.fa-linkedin {
+    background: #f5d2bc;
+    color: black;
+    }
 
+.fa-github {
+    background: #f5d2bc;
+    color: black;
+    }
+
+#mobile-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+    
+@media (min-width: 769px){
+    #wrapper{
+        flex-direction: row; 
+    }
+
+    a:focus, a:visited, a:active, a{
+        text-decoration: none;
+        color: white;
+        padding-left: 10%;
+        padding-top: 7.5%;
+    }
+    #name{
+        display: flex;
+        flex-basis: 27%;
+        flex-grow: 2;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-top: 0.05%;
+    }
+    
     h1{
         font-size: 3em;
         margin: 0;
         padding-top: 10%;
-        padding-left: 1%;
-    }
-    #name{
-        flex-basis: 27%;
-        flex-grow: 2;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
     }
 
     #Emil{
         display: flex;
-        background-color: rgb(32,32,32);;
+        background-color: rgb(32,32,32);
         color: white;
         width: 100%;
         padding-top: 16%;
@@ -80,32 +117,26 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
         flex-basis: 43%;
         margin-left: 1%;
         height: auto;
-        /* background: whitesmoke; */
     }
 
     .bodytext{
         font-size: 1.3em;
+        padding-left: 1%;
     }
 
     #nav{
         background-color: rgb(32,32,32);
         color: white;
         text-decoration: none;
-        margin-top: 15%;
+        display: flex;
+        margin-top: 10%;
         flex-basis: 20%;
         flex-grow: 2;
         justify-content: flex-start;
         align-items: flex-start;
         order: 2;
-        display: flex;
         flex-direction: column;
         border-top-left-radius: 1%;
-    }
-
-    a:focus, a:visited, a:active, a{
-        text-decoration: none;
-        color: white;
-        padding-left: 10%;
     }
 
     .bodylink:focus, .bodylink:visited, .bodylink:active, .bodylink {

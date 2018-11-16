@@ -25182,6 +25182,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
@@ -25202,19 +25204,71 @@ var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var App = function App() {
-    return _react2.default.createElement(
-        _reactRouterDom.HashRouter,
-        null,
-        _react2.default.createElement(
-            'div',
-            { id: 'wrapper' },
-            _react2.default.createElement(_EmilComp2.default, null),
-            _react2.default.createElement(_index2.default, null),
-            _react2.default.createElement(_Nav2.default, null)
-        )
-    );
-};
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var App = function (_React$Component) {
+    _inherits(App, _React$Component);
+
+    function App(props) {
+        _classCallCheck(this, App);
+
+        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+        _this.state = {
+            windowWidth: window.innerWidth
+        };
+
+        _this.widthChange = _this.widthChange.bind(_this);
+        _this.renderLaptop = _this.renderLaptop.bind(_this);
+        return _this;
+    }
+
+    _createClass(App, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            addEventListener('resize', this.widthChange);
+        }
+    }, {
+        key: 'widthChange',
+        value: function widthChange() {
+            this.setState({
+                windowWidth: window.innerWidth
+            });
+        }
+    }, {
+        key: 'renderLaptop',
+        value: function renderLaptop() {
+            if (this.state.windowWidth > '768') {
+                return _react2.default.createElement(
+                    _react2.default.Fragment,
+                    null,
+                    _react2.default.createElement(_index2.default, null),
+                    _react2.default.createElement(_Nav2.default, null)
+                );
+            }
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                _reactRouterDom.HashRouter,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { id: 'wrapper' },
+                    _react2.default.createElement(_EmilComp2.default, null),
+                    this.renderLaptop()
+                )
+            );
+        }
+    }]);
+
+    return App;
+}(_react2.default.Component);
 
 exports.default = App;
 
@@ -27757,17 +27811,33 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _MobileComp = __webpack_require__(69);
+
+var _MobileComp2 = _interopRequireDefault(_MobileComp);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var EmilComp = function EmilComp() {
+
+    function renderMobile() {
+        if (window.innerWidth < '769') {
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(_MobileComp2.default, null)
+            );
+        }
+    }
+
     return _react2.default.createElement(
         'div',
         { id: 'name' },
         _react2.default.createElement(
             'h1',
             { id: 'Emil' },
-            'Emil Schroder '
-        )
+            'Emil Schroder'
+        ),
+        renderMobile()
     );
 };
 
@@ -27799,38 +27869,22 @@ var Nav = function Nav() {
         _react2.default.createElement(
             _reactRouterDom.Link,
             { to: '/' },
-            _react2.default.createElement(
-                'p',
-                null,
-                'About'
-            )
+            'About'
         ),
         _react2.default.createElement(
             _reactRouterDom.Link,
             { to: '/code' },
-            _react2.default.createElement(
-                'p',
-                null,
-                'Code'
-            )
+            'Code'
         ),
         _react2.default.createElement(
             _reactRouterDom.Link,
             { to: '/professional' },
-            _react2.default.createElement(
-                'p',
-                null,
-                'Professional'
-            )
+            'Professional'
         ),
         _react2.default.createElement(
             _reactRouterDom.Link,
             { to: '/milk' },
-            _react2.default.createElement(
-                'p',
-                null,
-                'Milk'
-            )
+            'Milk'
         )
     );
 };
@@ -27924,13 +27978,13 @@ var About = function About() {
         _react2.default.createElement(
             'p',
             { className: 'bodytext' },
-            'I love to code with people, purpose and, ideally, puppies.',
+            'I love to code with people, purpose and, ideally, puppies',
             _react2.default.createElement('br', null)
         ),
         _react2.default.createElement(
             'p',
             { className: 'bodytext' },
-            'Will talk for hours on cricket, tea, milk and anything cafe related.',
+            'Will talk for hours on cricket, tea, milk and anything cafe related',
             _react2.default.createElement('br', null)
         ),
         _react2.default.createElement(
@@ -27986,7 +28040,7 @@ var Code = function Code() {
         _react2.default.createElement(
             'p',
             { className: 'bodytext' },
-            'Fullstack JavaScript with React and Redux.'
+            'Fullstack that isn\'t a house of cards'
         ),
         _react2.default.createElement(
             'p',
@@ -28138,6 +28192,49 @@ var Milk = function Milk() {
 };
 
 exports.default = Milk;
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MobileComp = function MobileComp() {
+    return _react2.default.createElement(
+        'div',
+        { id: 'mobile-view' },
+        _react2.default.createElement(
+            'h4',
+            null,
+            'Web developer'
+        ),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement(
+            'p',
+            null,
+            'Always keen to connect with you'
+        ),
+        _react2.default.createElement(
+            'div',
+            { id: 'social' },
+            _react2.default.createElement('a', { href: 'https://www.linkedin.com/in/emil-schroder-b40a535a/', 'class': 'fa fa-linkedin' }),
+            _react2.default.createElement('a', { href: 'https://github.com/EmilSchroder', 'class': 'fa fa-github' })
+        )
+    );
+};
+
+exports.default = MobileComp;
 
 /***/ })
 /******/ ]);

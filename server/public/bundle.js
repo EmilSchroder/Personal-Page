@@ -25194,11 +25194,11 @@ var _EmilComp = __webpack_require__(62);
 
 var _EmilComp2 = _interopRequireDefault(_EmilComp);
 
-var _Nav = __webpack_require__(63);
+var _Nav = __webpack_require__(64);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
-var _index = __webpack_require__(64);
+var _index = __webpack_require__(65);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -27811,7 +27811,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _MobileComp = __webpack_require__(69);
+var _MobileComp = __webpack_require__(63);
 
 var _MobileComp2 = _interopRequireDefault(_MobileComp);
 
@@ -27845,6 +27845,49 @@ exports.default = EmilComp;
 
 /***/ }),
 /* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MobileComp = function MobileComp() {
+    return _react2.default.createElement(
+        'div',
+        { id: 'mobile-view' },
+        _react2.default.createElement(
+            'h4',
+            null,
+            'Web developer'
+        ),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement(
+            'p',
+            null,
+            'Always keen to connect with you'
+        ),
+        _react2.default.createElement(
+            'div',
+            { id: 'social' },
+            _react2.default.createElement('a', { href: 'https://www.linkedin.com/in/emil-schroder-b40a535a/', 'class': 'fa fa-linkedin' }),
+            _react2.default.createElement('a', { href: 'https://github.com/EmilSchroder', 'class': 'fa fa-github' })
+        )
+    );
+};
+
+exports.default = MobileComp;
+
+/***/ }),
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27892,7 +27935,7 @@ var Nav = function Nav() {
 exports.default = Nav;
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27908,19 +27951,19 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(12);
 
-var _About = __webpack_require__(65);
+var _About = __webpack_require__(66);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _Code = __webpack_require__(66);
+var _Code = __webpack_require__(67);
 
 var _Code2 = _interopRequireDefault(_Code);
 
-var _Professional = __webpack_require__(67);
+var _Professional = __webpack_require__(68);
 
 var _Professional2 = _interopRequireDefault(_Professional);
 
-var _Milk = __webpack_require__(68);
+var _Milk = __webpack_require__(69);
 
 var _Milk2 = _interopRequireDefault(_Milk);
 
@@ -27940,7 +27983,7 @@ var Content = function Content() {
 exports.default = Content;
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27971,7 +28014,7 @@ var About = function About() {
             _react2.default.createElement(
                 'strong',
                 null,
-                'A web developer out of New Zealand\'s best capital city, Wellington.'
+                'A web developer out of New Zealand\'s best capital city, Wellington'
             ),
             _react2.default.createElement('br', null)
         ),
@@ -28003,7 +28046,7 @@ var About = function About() {
 exports.default = About;
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28034,7 +28077,7 @@ var Code = function Code() {
             _react2.default.createElement(
                 'strong',
                 null,
-                'Because we can\'t have fictional superpowers we must settle for real ones.'
+                'Because we can\'t have fictional superpowers we must settle for real ones'
             )
         ),
         _react2.default.createElement(
@@ -28068,7 +28111,7 @@ var Code = function Code() {
 exports.default = Code;
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28134,7 +28177,7 @@ var Professional = function Professional() {
 exports.default = Professional;
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28192,49 +28235,6 @@ var Milk = function Milk() {
 };
 
 exports.default = Milk;
-
-/***/ }),
-/* 69 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var MobileComp = function MobileComp() {
-    return _react2.default.createElement(
-        'div',
-        { id: 'mobile-view' },
-        _react2.default.createElement(
-            'h4',
-            null,
-            'Web developer'
-        ),
-        _react2.default.createElement('br', null),
-        _react2.default.createElement(
-            'p',
-            null,
-            'Always keen to connect with you'
-        ),
-        _react2.default.createElement(
-            'div',
-            { id: 'social' },
-            _react2.default.createElement('a', { href: 'https://www.linkedin.com/in/emil-schroder-b40a535a/', 'class': 'fa fa-linkedin' }),
-            _react2.default.createElement('a', { href: 'https://github.com/EmilSchroder', 'class': 'fa fa-github' })
-        )
-    );
-};
-
-exports.default = MobileComp;
 
 /***/ })
 /******/ ]);

@@ -13,7 +13,7 @@ class App extends React.Component{
         super(props)
 
         this.state = {
-            windowWidth: window.innerWidth
+            windowWidth: window.innerWidth,
         }
 
         this.widthChange = this.widthChange.bind(this)
@@ -23,6 +23,7 @@ class App extends React.Component{
     componentDidMount(){
         addEventListener('resize', this.widthChange)
     }
+
 
     widthChange(){
         this.setState({
@@ -41,8 +42,10 @@ class App extends React.Component{
         }
     }
 
+
 render(){
     return (
+        
         <Router>
             <div id='wrapper'>
                 <EmilComp />

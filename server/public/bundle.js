@@ -60,26 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 23);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(24);
-} else {
-  module.exports = __webpack_require__(25);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -269,11 +254,22 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(6);
+} else {
+  module.exports = __webpack_require__(7);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -370,10 +366,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -389,7 +382,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(11);
+  var ReactPropTypesSecret = __webpack_require__(8);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -469,68 +462,39 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
 module.exports = checkPropTypes;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
-
-
-/***/ }),
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(28);
+  module.exports = __webpack_require__(11);
 } else {
-  module.exports = __webpack_require__(29);
+  module.exports = __webpack_require__(12);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(26);
+var _reactDom = __webpack_require__(9);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(34);
+var _App = __webpack_require__(17);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -551,7 +515,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // import reducers from './reducers'
 
 /***/ }),
-/* 24 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -564,7 +528,7 @@ document.addEventListener('DOMContentLoaded', function () {
  * LICENSE file in the root directory of this source tree.
  */
 
-var k=__webpack_require__(6),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.concurrent_mode"):60111,y=n?Symbol.for("react.forward_ref"):60112,z=n?Symbol.for("react.suspense"):60113,A=n?Symbol.for("react.memo"):
+var k=__webpack_require__(2),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.concurrent_mode"):60111,y=n?Symbol.for("react.forward_ref"):60112,z=n?Symbol.for("react.suspense"):60113,A=n?Symbol.for("react.memo"):
 60115,B=n?Symbol.for("react.lazy"):60116,C="function"===typeof Symbol&&Symbol.iterator;function aa(a,b,e,c,d,g,h,f){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[e,c,d,g,h,f],m=0;a=Error(b.replace(/%s/g,function(){return l[m++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function D(a){for(var b=arguments.length-1,e="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)e+="&args[]="+encodeURIComponent(arguments[c+1]);aa(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",e)}var E={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},F={};
 function G(a,b,e){this.props=a;this.context=b;this.refs=F;this.updater=e||E}G.prototype.isReactComponent={};G.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?D("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};G.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};function H(){}H.prototype=G.prototype;function I(a,b,e){this.props=a;this.context=b;this.refs=F;this.updater=e||E}var J=I.prototype=new H;
@@ -582,7 +546,7 @@ __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:K,assign:k
 
 
 /***/ }),
-/* 25 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -603,8 +567,8 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(6);
-var checkPropTypes = __webpack_require__(10);
+var _assign = __webpack_require__(2);
+var checkPropTypes = __webpack_require__(3);
 
 // TODO: this is special because it gets imported during build.
 
@@ -2427,10 +2391,29 @@ module.exports = react;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 26 */
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2468,15 +2451,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(27);
+  module.exports = __webpack_require__(10);
 } else {
-  module.exports = __webpack_require__(30);
+  module.exports = __webpack_require__(13);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 27 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2492,7 +2475,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),n=__webpack_require__(6),ba=__webpack_require__(16);function ca(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var k=[c,d,e,f,g,h],l=0;a=Error(b.replace(/%s/g,function(){return k[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(1),n=__webpack_require__(2),ba=__webpack_require__(4);function ca(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var k=[c,d,e,f,g,h],l=0;a=Error(b.replace(/%s/g,function(){return k[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function t(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:t("227");function da(a,b,c,d,e,f,g,h,k){var l=Array.prototype.slice.call(arguments,3);try{b.apply(c,l)}catch(m){this.onError(m)}}
 var ea=!1,fa=null,ha=!1,ia=null,ja={onError:function(a){ea=!0;fa=a}};function ka(a,b,c,d,e,f,g,h,k){ea=!1;fa=null;da.apply(ja,arguments)}function la(a,b,c,d,e,f,g,h,k){ka.apply(this,arguments);if(ea){if(ea){var l=fa;ea=!1;fa=null}else t("198"),l=void 0;ha||(ha=!0,ia=l)}}var ma=null,na={};
 function oa(){if(ma)for(var a in na){var b=na[a],c=ma.indexOf(a);-1<c?void 0:t("96",a);if(!pa[c]){b.extractEvents?void 0:t("97",a);pa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;qa.hasOwnProperty(h)?t("99",h):void 0;qa[h]=f;var k=f.phasedRegistrationNames;if(k){for(e in k)k.hasOwnProperty(e)&&ra(k[e],g,h);e=!0}else f.registrationName?(ra(f.registrationName,g,h),e=!0):e=!1;e?void 0:t("98",d,a)}}}}
@@ -2732,7 +2715,7 @@ var ei={default:bi},fi=ei&&bi||ei;module.exports=fi.default||fi;
 
 
 /***/ }),
-/* 28 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2760,7 +2743,7 @@ exports.unstable_shouldYield=function(){return!f&&(null!==d&&d.expirationTime<l|
 
 
 /***/ }),
-/* 29 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3404,10 +3387,10 @@ exports.unstable_shouldYield = unstable_shouldYield;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 30 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3428,11 +3411,11 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(0);
-var _assign = __webpack_require__(6);
-var checkPropTypes = __webpack_require__(10);
-var scheduler = __webpack_require__(16);
-var tracing = __webpack_require__(31);
+var React = __webpack_require__(1);
+var _assign = __webpack_require__(2);
+var checkPropTypes = __webpack_require__(3);
+var scheduler = __webpack_require__(4);
+var tracing = __webpack_require__(14);
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -23139,25 +23122,25 @@ module.exports = reactDom;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 31 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(32);
+  module.exports = __webpack_require__(15);
 } else {
-  module.exports = __webpack_require__(33);
+  module.exports = __webpack_require__(16);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 32 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23174,7 +23157,7 @@ Object.defineProperty(exports,"__esModule",{value:!0});var b=0;exports.__interac
 
 
 /***/ }),
-/* 33 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23599,10 +23582,10 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 34 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23614,11 +23597,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Text = __webpack_require__(62);
+var _Text = __webpack_require__(18);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -23642,16 +23625,7 @@ var App = function (_React$Component) {
     _createClass(App, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement(
-                'div',
-                { id: 'wrapper' },
-                _react2.default.createElement(_Text2.default, null),
-                _react2.default.createElement(
-                    'div',
-                    { id: 'slider' },
-                    _react2.default.createElement('input', { type: 'range', min: '0', max: '1', value: '1' })
-                )
-            );
+            return _react2.default.createElement('div', { id: 'wrapper' });
         }
     }]);
 
@@ -23661,58 +23635,10 @@ var App = function (_React$Component) {
 exports.default = App;
 
 /***/ }),
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 18 */
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Text = function Text() {
-    return _react2.default.createElement(
-        'p',
-        null,
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dui velit. Nunc malesuada mauris vitae semper vehicula. Ut viverra viverra eros quis pharetra. Duis a nisi purus. Sed suscipit placerat auctor. Sed at nisl ultrices, vehicula nunc eu, vulputate velit. Vivamus tincidunt, eros et malesuada auctor, mauris nisl finibus sapien, venenatis condimentum erat lacus in erat. Aenean eu bibendum justo. Donec pretium risus tortor, eu dictum massa efficitur in. Nam et congue tortor, non molestie mi. Aenean eros augue, feugiat sed erat a, consequat tincidunt ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nibh porttitor, dictum sem eget, vestibulum nisl. Pellentesque semper dapibus dui, nec hendrerit odioLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dui velit. Nunc malesuada mauris vitae semper vehicula. Ut viverra viverra eros quis pharetra. Duis a nisi purus. Sed suscipit placerat auctor. Sed at nisl ultrices, vehicula nunc eu, vulputate velit. Vivamus tincidunt, eros et malesuada auctor, mauris nisl finibus sapien, venenatis condimentum erat lacus in erat. Aenean eu bibendum justo. Donec pretium risus tortor, eu dictum massa efficitur in. Nam et congue tortor, non molestie mi. Aenean eros augue, feugiat sed erat a, consequat tincidunt ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nibh porttitor, dictum sem eget, vestibulum nisl. Pellentesque semper dapibus dui, nec hendrerit odio aliquam eget. Vivamus venenatis sagittis ligula, vitae imperdiet purus tempor a. Integer ultrices feugiat lectus, sed aliquam eros lobortis in. Phasellus ex urna, condimentum in diam sit amet, lobortis pulvinar odio. Phasellus ultricies nunc sit amet libero pellentesque, sed mollis ante fermentum. Nulla tempor ultrices posuere. Mauris nec ipsum iaculis, maximus enim ac, vulputate arcu. Suspendisse metus odio, egestas sit amet justo ut, faucibus molestie leo. Cras ornare lacus in metus suscipit porttitor. Nulla id nisi eu urna ullamcorper ornare quis nec magna. Mauris fringilla nisl in velit posuere luctus. Nulla tempus mauris quis leo dignissim iaculis. Aliquam erat volutpat. Morbi sit amet metus quis elit malesuada fermentum. Duis lacus nisl, molestie in ullamcorper vel, facilisis eget ipsum. Mauris varius arcu sed libero vulputate molestie. In tortor tellus, lobortis a dapibus eget, pharetra eu est. Donec pellentesque semper nisi non consequat. Morbi at gravida est. Etiam vel lacinia est. Duis et est sollicitudin, eleifend neque a, egestas nibh. Praesent fermentum odio et massa condimentum aliquam. Curabitur in molestie nunc. Nam suscipit est sit amet urna auctor venenatis. Pellentesque tincidunt lorem sit amet maximus pharetra. Vestibulum faucibus dui fringilla convallis sodales. Donec sed massa quis lectus finibus condimentum eget vitae eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec auctor felis libero, sit amet venenatis lacus venenatis a. Nulla quis ultrices risus. Mauris rhoncus lacus ac lorem commodo ultrices. Curabitur sit amet pharetra massa. Quisque commodo a elit ac feugiat. Nam quis metus maximus, hendrerit ipsum eu, auctor odio. Cras hendrerit nibh in luctus efficitur. Cras risus dolor, dictum ut urna id, pretium vehicula purus. Fusce pretium facilisis massa, sed consequat eros egestas id. Proin sollicitudin volutpat risus. Morbi mollis odio mauris, at mollis risus pretium non. Nulla mi magna, porta gravida turpis ultricies, auctor placerat libero. Etiam turpis tellus, dapibus vitae odio ac, ornare suscipit quam. Donec semper arcu et volutpat vehicula. Pellentesque sodales, mauris a mattis tincidunt, libero sem luctus nisl, sed ullamcorper enim dolor a nisi. Duis mattis, libero et molestie vestibulum, tellus felis sagittis nibh, in finibus mi quam in leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dui velit. Nunc malesuada mauris vitae semper vehicula. Ut viverra viverra eros quis pharetra. Duis a nisi purus. Sed suscipit placerat auctor. Sed at nisl ultrices, vehicula nunc eu, vulputate velit. Vivamus tincidunt, eros et malesuada auctor, mauris nisl finibus sapien, venenatis condimentum erat lacus in erat. Aenean eu bibendum justo. Donec pretium risus tortor, eu dictum massa efficitur in. Nam et congue tortor, non molestie mi. Aenean eros augue, feugiat sed erat a, consequat tincidunt ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nibh porttitor, dictum sem eget, vestibulum nisl. Pellentesque semper dapibus dui, nec hendrerit odio aliquam eget. Vivamus venenatis sagittis ligula, vitae imperdiet purus tempor a. Integer ultrices feugiat lectus, sed aliquam eros lobortis in. Phasellus ex urna, condimentum in diam sit amet, lobortis pulvinar odio. Phasellus ultricies nunc sit amet libero pellentesque, sed mollis ante fermentum. Nulla tempor ultrices posuere. Mauris nec ipsum iaculis, maximus enim ac, vulputate arcu. Suspendisse metus odio, egestas sit amet justo ut, faucibus molestie leo. Cras ornare lacus in metus suscipit porttitor. Nulla id nisi eu urna ullamcorper ornare quis nec magna. Mauris fringilla nisl in velit posuere luctus. Nulla tempus mauris quis leo dignissim iaculis. Aliquam erat volutpat. Morbi sit amet metus quis elit malesuada fermentum. Duis lacus nisl, molestie in ullamcorper vel, facilisis eget ipsum. Mauris varius arcu sed libero vulputate molestie. In tortor tellus, lobortis a dapibus eget, pharetra eu est. Donec pellentesque semper nisi non consequat. Morbi at gravida est. Etiam vel lacinia est. Duis et est sollicitudin, eleifend neque a, egestas nibh. Praesent fermentum odio et massa condimentum aliquam. Curabitur in molestie nunc. Nam suscipit est sit amet urna auctor venenatis. Pellentesque tincidunt lorem sit amet maximus pharetra. Vestibulum faucibus dui fringilla convallis sodales. Donec sed massa quis lectus finibus condimentum eget vitae eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec auctor felis libero, sit amet venenatis lacus venenatis a. Nulla quis ultrices risus. Mauris rhoncus lacus ac lorem commodo ultrices. Curabitur sit amet pharetra massa. Quisque commodo a elit ac feugiat. Nam quis metus maximus, hendrerit ipsum eu, auctor odio. Cras hendrerit nibh in luctus efficitur. Cras risus dolor, dictum ut urna id, pretium vehicula purus. Fusce pretium facilisis massa, sed consequat eros egestas id. Proin sollicitudin volutpat risus. Morbi mollis odio mauris, at mollis risus pretium non. Nulla mi magna, porta gravida turpis ultricies, auctor placerat libero. Etiam turpis tellus, dapibus vitae odio ac, ornare suscipit quam. Donec semper arcu et volutpat vehicula. Pellentesque sodales, mauris a mattis tincidunt, libero sem luctus nisl, sed ullamcorper enim dolor a nisi. Duis mattis, libero et molestie vestibulum, tellus felis sagittis nibh, in finibus mi quam in leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dui velit. Nunc malesuada mauris vitae semper vehicula. Ut viverra viverra eros quis pharetra. Duis a nisi purus. Sed suscipit placerat auctor. Sed at nisl ultrices, vehicula nunc eu, vulputate velit. Vivamus tincidunt, eros et malesuada auctor, mauris nisl finibus sapien, venenatis condimentum erat lacus in erat. Aenean eu bibendum justo. Donec pretium risus tortor, eu dictum massa efficitur in. Nam et congue tortor, non molestie mi. Aenean eros augue, feugiat sed erat a, consequat tincidunt ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nibh porttitor, dictum sem eget, vestibulum nisl. Pellentesque semper dapibus dui, nec hendrerit odio aliquam eget. Vivamus venenatis sagittis ligula, vitae imperdiet purus tempor a. Integer ultrices feugiat lectus, sed aliquam eros lobortis in. Phasellus ex urna, condimentum in diam sit amet, lobortis pulvinar odio. Phasellus ultricies nunc sit amet libero pellentesque, sed mollis ante fermentum. Nulla tempor ultrices posuere. Mauris nec ipsum iaculis, maximus enim ac, vulputate arcu. Suspendisse metus odio, egestas sit amet justo ut, faucibus molestie leo. Cras ornare lacus in metus suscipit porttitor. Nulla id nisi eu urna ullamcorper ornare quis nec magna. Mauris fringilla nisl in velit posuere luctus. Nulla tempus mauris quis leo dignissim iaculis. Aliquam erat volutpat. Morbi sit amet metus quis elit malesuada fermentum. Duis lacus nisl, molestie in ullamcorper vel, facilisis eget ipsum. Mauris varius arcu sed libero vulputate molestie. In tortor tellus, lobortis a dapibus eget, pharetra eu est. Donec pellentesque semper nisi non consequat. Morbi at gravida est. Etiam vel lacinia est. Duis et est sollicitudin, eleifend neque a, egestas nibh. Praesent fermentum odio et massa condimentum aliquam. Curabitur in molestie nunc. Nam suscipit est sit amet urna auctor venenatis. Pellentesque tincidunt lorem sit amet maximus pharetra. Vestibulum faucibus dui fringilla convallis sodales. Donec sed massa quis lectus finibus condimentum eget vitae eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec auctor felis libero, sit amet venenatis lacus venenatis a. Nulla quis ultrices risus. Mauris rhoncus lacus ac lorem commodo ultrices. Curabitur sit amet pharetra massa. Quisque commodo a elit ac feugiat. Nam quis metus maximus, hendrerit ipsum eu, auctor odio. Cras hendrerit nibh in luctus efficitur. Cras risus dolor, dictum ut urna id, pretium vehicula purus. Fusce pretium facilisis massa, sed consequat eros egestas id. Proin sollicitudin volutpat risus. Morbi mollis odio mauris, at mollis risus pretium non. Nulla mi magna, porta gravida turpis ultricies, auctor placerat libero. Etiam turpis tellus, dapibus vitae odio ac, ornare suscipit quam. Donec semper arcu et volutpat vehicula. Pellentesque sodales, mauris a mattis tincidunt, libero sem luctus nisl, sed ullamcorper enim dolor a nisi. Duis mattis, libero et molestie vestibulum, tellus felis sagittis nibh, in finibus mi quam in leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dui velit. Nunc malesuada mauris vitae semper vehicula. Ut viverra viverra eros quis pharetra. Duis a nisi purus. Sed suscipit placerat auctor. Sed at nisl ultrices, vehicula nunc eu, vulputate velit. Vivamus tincidunt, eros et malesuada auctor, mauris nisl finibus sapien, venenatis condimentum erat lacus in erat. Aenean eu bibendum justo. Donec pretium risus tortor, eu dictum massa efficitur in. Nam et congue tortor, non molestie mi. Aenean eros augue, feugiat sed erat a, consequat tincidunt ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nibh porttitor, dictum sem eget, vestibulum nisl. Pellentesque semper dapibus dui, nec hendrerit odio aliquam eget. Vivamus venenatis sagittis ligula, vitae imperdiet purus tempor a. Integer ultrices feugiat lectus, sed aliquam eros lobortis in. Phasellus ex urna, condimentum in diam sit amet, lobortis pulvinar odio. Phasellus ultricies nunc sit amet libero pellentesque, sed mollis ante fermentum. Nulla tempor ultrices posuere. Mauris nec ipsum iaculis, maximus enim ac, vulputate arcu. Suspendisse metus odio, egestas sit amet justo ut, faucibus molestie leo. Cras ornare lacus in metus suscipit porttitor. Nulla id nisi eu urna ullamcorper ornare quis nec magna. Mauris fringilla nisl in velit posuere luctus. Nulla tempus mauris quis leo dignissim iaculis. Aliquam erat volutpat. Morbi sit amet metus quis elit malesuada fermentum. Duis lacus nisl, molestie in ullamcorper vel, facilisis eget ipsum. Mauris varius arcu sed libero vulputate molestie. In tortor tellus, lobortis a dapibus eget, pharetra eu est. Donec pellentesque semper nisi non consequat. Morbi at gravida est. Etiam vel lacinia est. Duis et est sollicitudin, eleifend neque a, egestas nibh. Praesent fermentum odio et massa condimentum aliquam. Curabitur in molestie nunc. Nam suscipit est sit amet urna auctor venenatis. Pellentesque tincidunt lorem sit amet maximus pharetra. Vestibulum faucibus dui fringilla convallis sodales. Donec sed massa quis lectus finibus condimentum eget vitae eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec auctor felis libero, sit amet venenatis lacus venenatis a. Nulla quis ultrices risus. Mauris rhoncus lacus ac lorem commodo ultrices. Curabitur sit amet pharetra massa. Quisque commodo a elit ac feugiat. Nam quis metus maximus, hendrerit ipsum eu, auctor odio. Cras hendrerit nibh in luctus efficitur. Cras risus dolor, dictum ut urna id, pretium vehicula purus. Fusce pretium facilisis massa, sed consequat eros egestas id. Proin sollicitudin volutpat risus. Morbi mollis odio mauris, at mollis risus pretium non. Nulla mi magna, porta gravida turpis ultricies, auctor placerat libero. Etiam turpis tellus, dapibus vitae odio ac, ornare suscipit quam. Donec semper arcu et volutpat vehicula. Pellentesque sodales, mauris a mattis tincidunt, libero sem luctus nisl, sed ullamcorper enim dolor a nisi. Duis mattis, libero et molestie vestibulum, tellus felis sagittis nibh, in finibus mi quam in leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dui velit. Nunc malesuada mauris vitae semper vehicula. Ut viverra viverra eros quis pharetra. Duis a nisi purus. Sed suscipit placerat auctor. Sed at nisl ultrices, vehicula nunc eu, vulputate velit. Vivamus tincidunt, eros et malesuada auctor, mauris nisl finibus sapien, venenatis condimentum erat lacus in erat. Aenean eu bibendum justo. Donec pretium risus tortor, eu dictum massa efficitur in. Nam et congue tortor, non molestie mi. Aenean eros augue, feugiat sed erat a, consequat tincidunt ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nibh porttitor, dictum sem eget, vestibulum nisl. Pellentesque semper dapibus dui, nec hendrerit odio aliquam eget. Vivamus venenatis sagittis ligula, vitae imperdiet purus tempor a. Integer ultrices feugiat lectus, sed aliquam eros lobortis in. Phasellus ex urna, condimentum in diam sit amet, lobortis pulvinar odio. Phasellus ultricies nunc sit amet libero pellentesque, sed mollis ante fermentum. Nulla tempor ultrices posuere. Mauris nec ipsum iaculis, maximus enim ac, vulputate arcu. Suspendisse metus odio, egestas sit amet justo ut, faucibus molestie leo. Cras ornare lacus in metus suscipit porttitor. Nulla id nisi eu urna ullamcorper ornare quis nec magna. Mauris fringilla nisl in velit posuere luctus. Nulla tempus mauris quis leo dignissim iaculis. Aliquam erat volutpat. Morbi sit amet metus quis elit malesuada fermentum. Duis lacus nisl, molestie in ullamcorper vel, facilisis eget ipsum. Mauris varius arcu sed libero vulputate molestie. In tortor tellus, lobortis a dapibus eget, pharetra eu est. Donec pellentesque semper nisi non consequat. Morbi at gravida est. Etiam vel lacinia est. Duis et est sollicitudin, eleifend neque a, egestas nibh. Praesent fermentum odio et massa condimentum aliquam. Curabitur in molestie nunc. Nam suscipit est sit amet urna auctor venenatis. Pellentesque tincidunt lorem sit amet maximus pharetra. Vestibulum faucibus dui fringilla convallis sodales. Donec sed massa quis lectus finibus condimentum eget vitae eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec auctor felis libero, sit amet venenatis lacus venenatis a. Nulla quis ultrices risus. Mauris rhoncus lacus ac lorem commodo ultrices. Curabitur sit amet pharetra massa. Quisque commodo a elit ac feugiat. Nam quis metus maximus, hendrerit ipsum eu, auctor odio. Cras hendrerit nibh in luctus efficitur. Cras risus dolor, dictum ut urna id, pretium vehicula purus. Fusce pretium facilisis massa, sed consequat eros egestas id. Proin sollicitudin volutpat risus. Morbi mollis odio mauris, at mollis risus pretium non. Nulla mi magna, porta gravida turpis ultricies, auctor placerat libero. Etiam turpis tellus, dapibus vitae odio ac, ornare suscipit quam. Donec semper arcu et volutpat vehicula. Pellentesque sodales, mauris a mattis tincidunt, libero sem luctus nisl, sed ullamcorper enim dolor a nisi. Duis mattis, libero et molestie vestibulum, tellus felis sagittis nibh, in finibus mi quam in leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dui velit. Nunc malesuada mauris vitae semper vehicula. Ut viverra viverra eros quis pharetra. Duis a nisi purus. Sed suscipit placerat auctor. Sed at nisl ultrices, vehicula nunc eu, vulputate velit. Vivamus tincidunt, eros et malesuada auctor, mauris nisl finibus sapien, venenatis condimentum erat lacus in erat. Aenean eu bibendum justo. Donec pretium risus tortor, eu dictum massa efficitur in. Nam et congue tortor, non molestie mi. Aenean eros augue, feugiat sed erat a, consequat tincidunt ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nibh porttitor, dictum sem eget, vestibulum nisl. Pellentesque semper dapibus dui, nec hendrerit odio aliquam eget. Vivamus venenatis sagittis ligula, vitae imperdiet purus tempor a. Integer ultrices feugiat lectus, sed aliquam eros lobortis in. Phasellus ex urna, condimentum in diam sit amet, lobortis pulvinar odio. Phasellus ultricies nunc sit amet libero pellentesque, sed mollis ante fermentum. Nulla tempor ultrices posuere. Mauris nec ipsum iaculis, maximus enim ac, vulputate arcu. Suspendisse metus odio, egestas sit amet justo ut, faucibus molestie leo. Cras ornare lacus in metus suscipit porttitor. Nulla id nisi eu urna ullamcorper ornare quis nec magna. Mauris fringilla nisl in velit posuere luctus. Nulla tempus mauris quis leo dignissim iaculis. Aliquam erat volutpat. Morbi sit amet metus quis elit malesuada fermentum. Duis lacus nisl, molestie in ullamcorper vel, facilisis eget ipsum. Mauris varius arcu sed libero vulputate molestie. In tortor tellus, lobortis a dapibus eget, pharetra eu est. Donec pellentesque semper nisi non consequat. Morbi at gravida est. Etiam vel lacinia est. Duis et est sollicitudin, eleifend neque a, egestas nibh. Praesent fermentum odio et massa condimentum aliquam. Curabitur in molestie nunc. Nam suscipit est sit amet urna auctor venenatis. Pellentesque tincidunt lorem sit amet maximus pharetra. Vestibulum faucibus dui fringilla convallis sodales. Donec sed massa quis lectus finibus condimentum eget vitae eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec auctor felis libero, sit amet venenatis lacus venenatis a. Nulla quis ultrices risus. Mauris rhoncus lacus ac lorem commodo ultrices. Curabitur sit amet pharetra massa. Quisque commodo a elit ac feugiat. Nam quis metus maximus, hendrerit ipsum eu, auctor odio. Cras hendrerit nibh in luctus efficitur. Cras risus dolor, dictum ut urna id, pretium vehicula purus. Fusce pretium facilisis massa, sed consequat eros egestas id. Proin sollicitudin volutpat risus. Morbi mollis odio mauris, at mollis risus pretium non. Nulla mi magna, porta gravida turpis ultricies, auctor placerat libero. Etiam turpis tellus, dapibus vitae odio ac, ornare suscipit quam. Donec semper arcu et volutpat vehicula. Pellentesque sodales, mauris a mattis tincidunt, libero sem luctus nisl, sed ullamcorper enim dolor a nisi. Duis mattis, libero et molestie vestibulum, tellus felis sagittis nibh, in finibus mi quam in leo.'
-    );
-};
-
-exports.default = Text;
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Emil\\dev-academy\\workspace\\Personal-Page\\client\\components\\Text.jsx'");
 
 /***/ })
 /******/ ]);

@@ -15,13 +15,27 @@ body{
 
 p{
     text-align: justify;
-    font-size:  10px;
+    font-size:  7px;
 }
 
-#slider{
+.slider{
     position: absolute;
-    left: 100px;
-    top: 100px;
     z-index: 1;
+    top: 100px;
+    transform: rotate(90deg)
+}
+
+.green{
+    left: 100px;
+    background-color: green;
+}
+
+.red{
+    left: 150px;
     background-color: red;
+}
+
+.blue{
+    left: 200px;
+    background-color: blue;
 }

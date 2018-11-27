@@ -1,41 +1,28 @@
 html{
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
+    height: 100%;
+    margin:0;
 }
 
 body{
-    margin: 0;
+    height: 100%;
+    margin:0;
+}
+
+#app{
     height: 100%;
 }
 
 #wrapper{
     height: 100%;
+    width: 67%;
+    background-color: #f5d2bc;
+    display: flex;
+    align-items: center;
 }
 
-p{
-    text-align: justify;
-    font-size:  7px;
+h1{
+    padding-left: 10%;
+    font-size: 4.5em;
+    line-height: 1.5em;  
 }
 
-.slider{
-    position: absolute;
-    z-index: 1;
-    top: 100px;
-    transform: rotate(90deg)
-}
-
-.green{
-    left: 100px;
-    background-color: green;
-}
-
-.red{
-    left: 150px;
-    background-color: red;
-}
-
-.blue{
-    left: 200px;
-    background-color: blue;
-}

@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Text from './Text'
-
+import Cycle from './Cycle'
 
 
 
@@ -19,7 +18,10 @@ render(){
     return (
         
             <div id='wrapper'>
-    
+            <h1>
+                Emil Schroder is a:<br />
+                <Cycle />
+            </h1>
      
                 
             </div>

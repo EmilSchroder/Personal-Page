@@ -21,9 +21,9 @@ class Cycle extends React.Component{
         return(
             <p>
                     <Typed 
-                    strings={['Here you can find anything', 'what up I am here;']} 
-                    typeSpeed={2} 
-                    backSpeed={50}
+                    strings={['cricket lover', 'biscuit eater','teac drinker', 'web developer']} 
+                    typeSpeed={1} 
+                    backSpeed={1}
                 />
             </p>
         )

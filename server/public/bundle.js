@@ -23696,9 +23696,9 @@ var Cycle = function (_React$Component) {
                 'p',
                 null,
                 _react2.default.createElement(_reactTyped2.default, {
-                    strings: ['Here you can find anything', 'what up I am here;'],
-                    typeSpeed: 2,
-                    backSpeed: 50
+                    strings: ['cricket lover', 'biscuit eater', 'teac drinker', 'web developer'],
+                    typeSpeed: 1,
+                    backSpeed: 1
                 })
             );
         }

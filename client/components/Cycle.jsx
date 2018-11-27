@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Typed from 'react-typed';
+
 class Cycle extends React.Component{
 
     constructor(props){
@@ -9,19 +11,20 @@ class Cycle extends React.Component{
             iteration: 0,
             arr: ['ahppy', 'whatnot', 'yeet', 'fren', 'doogo', 'boi']
         }
-        this.options = this.options.bind(this)
+
     }
 
-    options(){
-            return('hpap')
-    }
 
     
 
     render(){
         return(
             <p>
-                {setInterval(()=>this.options(),1000)}
+                    <Typed 
+                    strings={['Here you can find anything', 'what up I am here;']} 
+                    typeSpeed={2} 
+                    backSpeed={50}
+                />
             </p>
         )
     }

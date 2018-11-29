@@ -23642,7 +23642,21 @@ var App = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { id: 'social' },
-                    'Where am I?'
+                    _react2.default.createElement(
+                        'a',
+                        { href: 'www.google.com' },
+                        _react2.default.createElement('img', { src: './images/github.svg.png', alt: 'Github logo linking to Emil\'s Github repos' })
+                    ),
+                    _react2.default.createElement(
+                        'a',
+                        { href: 'www.google.com' },
+                        _react2.default.createElement('img', { src: './images/linkedin.png', alt: 'LinkedIn logo linking to Emil\'s LinkedIn account' })
+                    ),
+                    _react2.default.createElement(
+                        'a',
+                        { href: 'www.google.com' },
+                        _react2.default.createElement('img', { src: './images/email.png', alt: 'Email icon, clicking reveals email address' })
+                    )
                 )
             );
         }

@@ -8,31 +8,62 @@ body{
     margin:0;
 }
 
+
+
+#app{
+    height: 100%;
+}
+
 #full{
+    display: flex;
     height: 100%;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 #wrapper{
-    height: 100%;
     flex-grow: 2;
-    max-width: 67%;
     background-color: #f5d2bc;
     display: flex;
     align-items: center;
+    min-width: 63%;
 }
 
 #social{
     display: flex;
     flex-grow: 1;
-    max-width: 20%;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 19.5%;
+}
+a{
+    width: 21%;
+}
+img{
+    width: 100%;
 }
 
 h1{
-    padding-left: 10%;
+    padding-left: 5%;
     font-size: 4.5em;
     line-height: 1.5em;  
 }
 
+@media screen and (max-width: 320px){
+    h1{
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 779px){
+    #social{
+        flex-direction: column;
+    }
+    a {
+        width: 30%;
+    }
+    img{
+        width: 100%;
+    }
+}

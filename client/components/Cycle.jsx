@@ -7,11 +7,6 @@ class Cycle extends React.Component{
     constructor(props){
         super(props)
 
-        this.state={
-            iteration: 0,
-            arr: ['ahppy', 'whatnot', 'yeet', 'fren', 'doogo', 'boi']
-        }
-
     }
 
 
@@ -21,7 +16,7 @@ class Cycle extends React.Component{
         return(
             <p>
                     <Typed 
-                    strings={['cricket lover', 'biscuit eater','tea drinker', 'web developer']} 
+                    strings={['cricket lover', 'noodle maker','tea drinker', 'web developer']} 
                     typeSpeed={20} 
                     backSpeed={1}
                 />

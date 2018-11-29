@@ -47,8 +47,8 @@ img{
 
 h1{
     padding-left: 5%;
-    font-size: 4.5em;
-    line-height: 1.5em;  
+    font-size: 3em;
+    line-height: 1em;  
 }
 
 #confirmmes{
@@ -75,6 +75,10 @@ h1{
     }
     img{
         width: 100%;
+    }
+    h1{
+        font-size: 4.5em;
+        line-height: 1.5em;  
     }
 }
 

@@ -23675,7 +23675,7 @@ var App = function (_React$Component) {
                         _react2.default.createElement(
                             'p',
                             { id: 'confirmmes' },
-                            'copied email address to clipboard'
+                            'Address copied to clipboard'
                         )
                     )
                 )

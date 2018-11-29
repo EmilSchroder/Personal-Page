@@ -33,7 +33,7 @@ render(){
                 <a href='https://www.linkedin.com/in/emil-schroder-b40a535a/'><img src='./images/linkedin.png' alt="LinkedIn logo linking to Emil's LinkedIn account" /></a>
                 <Clipboard component='a' data-clipboard-text="eschro66@gmail.com">
                     <img onClick={()=>this.tooltip()} src='./images/email.png' alt="Email icon, clicking reveals email address" />
-                    <p id='confirmmes'>copied email address to clipboard</p>
+                    <p id='confirmmes'>Address copied to clipboard</p>
                 </Clipboard>
                 
             </div>

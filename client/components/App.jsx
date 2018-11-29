@@ -1,10 +1,7 @@
 import React from 'react'
-import {HashRouter as Router, Route} from 'react-router-dom'
+import Clipboard from 'react-clipboard.js'
+import Cycle from './Cycle'
 
-
-import EmilComp from './EmilComp'
-import Nav from './Nav'
-import Content from './Content/index'
 
 
 class App extends React.Component{
@@ -12,46 +9,36 @@ class App extends React.Component{
     constructor(props){
         super(props)
 
-        this.state = {
-            windowWidth: window.innerWidth,
-        }
-
-        this.widthChange = this.widthChange.bind(this)
-        this.renderLaptop = this.renderLaptop.bind(this)
+        this.tooltip = this.tooltip.bind(this)
     }
 
-    componentDidMount(){
-        addEventListener('resize', this.widthChange)
-    }
-
-
-    widthChange(){
-        this.setState({
-            windowWidth: window.innerWidth
-        })
-    }
-
-    renderLaptop(){
-        if (this.state.windowWidth>'768'){
-            return(
-                <React.Fragment>
-                    <Content />
-                    <Nav />
-                </React.Fragment>
-            )
-        }
-    }
+tooltip(){
+    document.getElementById('confirmmes').style.animation = "flashup 3s ease-out"
+}
 
 
 render(){
     return (
-        
-        <Router>
+        <div id='full'>
+
             <div id='wrapper'>
-                <EmilComp />
-                {this.renderLaptop()}
+                <h1>
+                    Emil Schroder is a:<br />
+                    <Cycle />
+                </h1>  
             </div>
-        </Router>
+
+            <div id='social'>
+                <a href='https://github.com/EmilSchroder'><img src='./images/github.svg.png' alt="Github logo linking to Emil's Github repos" /></a>
+                <a href='https://www.linkedin.com/in/emil-schroder-b40a535a/'><img src='./images/linkedin.png' alt="LinkedIn logo linking to Emil's LinkedIn account" /></a>
+                <Clipboard component='a' data-clipboard-text="eschro66@gmail.com">
+                    <img onClick={()=>this.tooltip()} src='./images/email.png' alt="Email icon, clicking reveals email address" />
+                    <p id='confirmmes'>Address copied to clipboard</p>
+                </Clipboard>
+                
+            </div>
+
+        </div>
     )
 
 }

@@ -40,6 +40,7 @@ body{
 a{
     width: 21%;
 }
+
 img{
     width: 100%;
 }
@@ -48,6 +49,10 @@ h1{
     padding-left: 5%;
     font-size: 4.5em;
     line-height: 1.5em;  
+}
+
+#confirmmes{
+    visibility: collapse;
 }
 
 @media screen and (max-width: 320px){
@@ -62,8 +67,24 @@ h1{
     }
     a {
         width: 30%;
+        cursor: pointer;
     }
     img{
         width: 100%;
+    }
+}
+
+@keyframes flashup{
+    0%{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    25%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
     }
 }

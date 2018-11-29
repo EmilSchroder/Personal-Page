@@ -23627,13 +23627,22 @@ var App = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { id: 'wrapper' },
+                { id: 'full' },
                 _react2.default.createElement(
-                    'h1',
-                    null,
-                    'Emil Schroder is a:',
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement(_Cycle2.default, null)
+                    'div',
+                    { id: 'wrapper' },
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        'Emil Schroder is a:',
+                        _react2.default.createElement('br', null),
+                        _react2.default.createElement(_Cycle2.default, null)
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { id: 'social' },
+                    'Where am I?'
                 )
             );
         }
@@ -23696,8 +23705,8 @@ var Cycle = function (_React$Component) {
                 'p',
                 null,
                 _react2.default.createElement(_reactTyped2.default, {
-                    strings: ['cricket lover', 'biscuit eater', 'teac drinker', 'web developer'],
-                    typeSpeed: 1,
+                    strings: ['cricket lover', 'biscuit eater', 'tea drinker', 'web developer'],
+                    typeSpeed: 20,
                     backSpeed: 1
                 })
             );

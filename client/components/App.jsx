@@ -16,15 +16,19 @@ class App extends React.Component{
 
 render(){
     return (
-        
+        <div id='full'>
             <div id='wrapper'>
             <h1>
                 Emil Schroder is a:<br />
                 <Cycle />
             </h1>
-     
+
                 
+            </div>            
+            <div id='social'>
+                Where am I?
             </div>
+        </div>
     )
 
 }

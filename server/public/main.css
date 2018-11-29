@@ -8,15 +8,25 @@ body{
     margin:0;
 }
 
-#app{
+#full{
     height: 100%;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
 }
 
 #wrapper{
     height: 100%;
-    width: 67%;
+    flex-grow: 2;
+    max-width: 67%;
     background-color: #f5d2bc;
     display: flex;
+    align-items: center;
+}
+
+#social{
+    display: flex;
+    flex-grow: 1;
+    max-width: 20%;
     align-items: center;
 }
 

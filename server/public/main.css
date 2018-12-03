@@ -74,6 +74,11 @@ h1{
     a {
         width: 100px;
         cursor: pointer;
+        transition: 0.25s ease-out;
+    }
+    a:hover{
+        width: 120px;
+        transition: 0.25s ease-out;
     }
     img{
         width: 100%;
